@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Web Canvas</title>
+        <link rel="Shortcut Icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="header"><h1>Let's Paint!</h1></div>
+        <div id="top">
+            <div class="t tools" id="clear"><img src="images/clear.png"></div>
+            <div class="t tools" id="undo"><img src="images/undo.png"></div>
+            <div class="t tools" id="redo"><img src="images/redo.png"></div>
+        </div>
+        <div id="left">
+            <div class="l tools" id="pen"><img src="images/pencil.png"></div>
+            <div class="l tools" id="highlighter"><img src="images/marker.png"></div>
+            <div class="l tools" id="eraser"><img src="images/eraser1.png"></div>
+            <div class="l tools" id="text"><img src="images/letter_button.png"></div> 
+            <div class="l tools" id="line"><img src="images/line.png"></div>
+            <div class="l tools" id="circle" onclick="shapes('circle')"><img src="images/circle.png"></div>
+            <div class="l tools" id="triangle" onclick="shapes('triangle')"><img src="images/triangle.png"></div>
+            <div class="l tools" id="rectangle" onclick="shapes('rectangle')"><img src="images/rectangle.png"></div>
+            <div class="l tools" id="square" onclick="shapes('square')"><img src="images/square.png"></div>
+        </div>
+        <!--<div id="canvas">-->
+            <canvas id="Canvas" width="650px" height="425px" style="border:rgb(17, 105, 206) 2.5px solid;"></canvas>
+        <!--</div>-->
+        
+        <div id="right">
+            <div class="r tools" id="rainbow"><img src="images/rainbow.png"></div>
+            <div><input type="color" class="r tool" id="color" value="#95e0f7"></div>
+            <div class="r tools" id="fill"><img src="images/fill.png"></div>
+            <div><input type="range" class="r tools" id="size" min="1" max="76" step="5" value="5"></div>
+            <div class="r tool"><select id="selectsize">  <!-- 適當添加class id -->
+                <option class="fontsize" value="8">8</option>
+                <option class="fontsize" value="12">12</option>
+                <option class="fontsize" value="16">16</option>
+                <option class="fontsize" value="20">20</option>
+                <option class="fontsize" value="24">24</option>
+                <option class="fontsize" value="32">32</option>
+                <option class="fontsize" value="48">48</option>
+                <option class="fontsize" value="64">64</option>
+                <option class="fontsize" value="72">72</option>
+                <option class="fontsize" value="100">100</option>
+            </select></div>
+
+            <div class="r tool"><select id="selectstyle">
+                <option class="fontstyle" value="Arial">Arial</option>
+                <option class="fontstyle" value="Tahoma">Tahoma</option>
+                <option class="fontstyle" value="Helvetica">Helvetica</option>
+                <option class="fontstyle" value="Georgia">Georgia</option>
+                <option class="fontstyle" value="cursive">cursive</option>
+                <option class="fontstyle" value="fantasy">fantasy</option>
+                <option class="fontstyle" value="monospace">monospace</option>
+                <option class="fontstyle" value="微軟正黑體">微軟正黑體</option>
+                <option class="fontstyle" value="標楷體">標楷體</option>
+                <option class="fontstyle" value="新細明體">新細明體</option>
+            </select></div>
+        </div>
+        
+        <div id="bottom">
+            <label class="image_button"><div class="b tools"><input type="file"  id="image" accept="image/*"><img src="images/upload.png"></div></label>
+            <div class="b tools"><a  id="save" href="save"><img src="images/download.png"></a></div>
+        </div>
+        <input type="text" id="textbox">
+        <script src="draw.js"></script>
+    </body>
+<html>

@@ -1,0 +1,139 @@
+body{
+    font-family: Arial, Tahoma, Helvetica,Georgia, cursive, fantasy, monospace, Microsoft JhengHei, DFKai-sb, MingLiU;
+    background-color: rgb(171, 232, 243);
+    /*border: 1px black solid;*/
+    /*display:flexbox;*/
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 12fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 5fr 0.5fr;*/
+    object-fit: contain;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#size{
+    /*width:100px;
+    height:1px;*/
+    transform: rotate(90deg);
+    /*height: 100px;*/
+}
+
+.header{
+    /*grid-column: 3;
+    grid-row: 1;*/
+    /*border: blue 3px solid;*/
+    font-family: monospace;
+    font-size: 23px;
+    color: rgb(0, 9, 141);
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0.075em 0.075em 0.15em seashell;
+}
+
+#top{
+    /*grid-column: 3;
+    grid-row: 2;*/
+    position: absolute;
+    vertical-align: top;
+    /*border: yellow 3px solid;*/
+    top:16%;
+    left:25%;
+}
+
+
+#left{
+    /*width: 150px;*/
+    /*grid-column: 2;
+    grid-row: 3;*/
+    /*display: inline-block;
+    vertical-align: top;*/
+    position: absolute;
+    /*order: red 3px solid;*/
+    top:25%;
+    left: 20%;
+}
+
+#right{
+    /*display: inline-block;
+    vertical-align: top;*/
+    /*grid-column: 4;
+    grid-row: 3;*/
+    position: absolute;
+    /*border: orange 3px solid;*/
+    top:25%;
+    right: 20%;
+}
+
+#bottom{
+    /*grid-column: 3;
+    grid-row: 4;*/
+    /*display: inline-block;
+    vertical-align: top;*/
+    position: absolute;
+    /*border: green 3px solid;*/
+    top:16%;
+    right: 25%;
+}
+
+.t{
+    float: left;
+}
+
+.b{
+    float: left;
+}
+
+
+
+
+.tools, .tool{
+    /*border: #0051ff 1px solid;*/
+    border-radius: 20px;
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    background: rgb(171, 232, 243);
+    text-align: center;
+    cursor: pointer;
+}
+
+.tools:hover{
+    border: orangered 1.5px solid;
+    border-radius: 20px;
+    background: orangered;
+}
+
+
+
+#Canvas{
+    /*grid-column: 3;
+    grid-row: 3;*/
+    /*display: inline-block;
+    vertical-align: top;*/
+    position: absolute;
+    margin: 0 auto;
+    /*left: 250px;
+    top: 100px;*/
+    cursor: default;
+    background-color: white;
+    border-radius: 7.5px; 
+    max-width: 50%;
+    top:25%;
+    left: 25%; 
+}
+
+#image{
+    display:none;
+}
+
+#textbox{
+    visibility: hidden;
+    border: rgba(0, 0, 0, 0.3) 1px solid;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
