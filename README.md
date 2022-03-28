@@ -2,8 +2,6 @@
 ## Assignment 01 Web Canvas
 
 
-# README
-
 ### How to use 
 一點進網址會看到這樣的外觀：
 
