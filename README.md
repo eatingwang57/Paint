@@ -122,18 +122,3 @@
         }
     ```   
     ![](https://i.imgur.com/MkzR9J5.png)
-
-
-### Gitlab page link
-
-> [https://107062103.gitlab.io/AS_01_WebCanvas](https://107062103.gitlab.io/AS_01_WebCanvas)
-
-### Others (Optional)
-
-    希望老師、助教會喜歡我的小畫家！
-
-<style>
-table th{
-    width: 100%;
-}
-</style>
